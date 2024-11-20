@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micheal Anteneh</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header">
+    <img src="./Assets/myLogo.png" alt="Logo"/>
+  </div>
+
+  <section id="hero">
+    <h1 class="cssanimation leMagnify sequence">Michael Anteneh</h1>
+  </section>
+  
+  <section class="section" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am a Computer Science Graduate with some hands-on experience in programming and software
+          development. I know several programming language and am excited to use what I have learned in
+          university and as a self-taught in real-world projects. I enjoy solving problems and am interested in
+          creating new and useful software </p>
+      </div>
+      <div class="about-image">
+        <img src="./Assets/hero.jpg" alt="Your Name">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="details">
+    <h2>My Journey & Skills</h2>
+  
+    <div class="detail-container">
+      <!-- Education Section -->
+      <div class="item education">
+        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="year">2025</span>
+            <p><strong>Master's in Software Engineering</strong> - Addis Ababa University</p>
+          </div>
+          
+          <div class="timeline-item">
+            <span class="year">2023</span>
+            <p><strong>Bachelor's in Computer Science</strong> - Jigjiga University</p>
+          </div>
+          
+          <div class="timeline-item">
+            <span class="year">2019</span>
+            <p><strong>High School Diploma</strong> - Radical Academy</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Skills Section -->
+      <div class="item skills">
+        <h3><i class="fas fa-tools"></i> Skills</h3>
+        <ul class="skills-list">
+          <li><i class="fab fa-js-square"></i> JavaScript (ES6+)</li>
+          <li><i class="fab fa-react"></i> React.js</li>
+          <li><i class="fab fa-node"></i> Node.js</li>
+          <li><i class="fas fa-database"></i> MongoDB</li>
+          <li><i class="fab fa-html5"></i> HTML5 & <i class="fab fa-css3-alt"></i> CSS3</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section" id="services">
+    <h2 class="sectionH">WHAT I DO</h2>
+    <div class="service-container">
+      <div class="service-item">
+        <i class="fas fa-shopping-cart"></i> 
+        <div>
+          <h3>E-commerce Solutions</h3>
+          <p>Creating secure, feature-rich online stores with payment gateways.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-code"></i> 
+        <div>
+          <h3>Website Development</h3>
+          <p>Building responsive, scalable, and visually appealing websites.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-server"></i> 
+        <div>
+          <h3>Custom API Development</h3>
+          <p>Creating APIs to connect various applications and improve functionality.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-desktop"></i> 
+        <div> 
+          <h3>Web Application Development</h3>
+          <p>Developing web-based applications for specific business needs.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    
+    <div class="projects-container">
+      <!-- Project 1 (Link) -->
+      <div class="project-card link">
+        <img src="./Assets/Scale Up.png" alt="Scale Up Adverts">
+        <div class="card-content">
+          <h3>Scale Up Adverts</h3>
+          <p>A responsive portfolio built for an organization.</p>
+          <a href="https://scaleupadverts.com" target="_blank" class="project-link preview-button">
+            <i class="fas fa-external-link-alt"></i> View Project
+          </a>
+        </div>
+      </div>
+  
+      <!-- Project 2 (Link) -->
+      <div class="project-card link">
+        <img src="./Assets/Natnael Abi.png" alt="Natnael Abi">
+        <div class="card-content">
+          <h3>Natnael Abi</h3>
+          <p>A responsive portfolio website built for a public figure.</p>
+          <a href="https://natnaelabi.codefightersdigitals.com" target="_blank" class="project-link preview-button">
+            <i class="fas fa-external-link-alt"></i> View Project
+          </a>
+        </div>
+      </div>
+  
+      <!-- Project 3 (Image Modal) -->
+      <div class="project-card image">
+        <img src="./Assets/Michael's Deals.png" alt="Micon's Collection">
+        <div class="card-content">
+          <h3>Micheal's Deals</h3>
+          <p>A full-stack online application with MERN stack. Payment integrated with Chappa.</p>
+          <button class="preview-button" onclick="openModal()">Preview</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal for Project 3 -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+        <img id="modalImage" src="./Assets/Michael's Deals.png" alt="Project Image">
+        <button class="next" onclick="changeImage(1)">&#10095;</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section" id="contact">
+    <h2 class="sectionH">GET IN TOUCH</h2>
+    <p class="sectionP">Let's work togerher</p>
+    <div class="contact-container">
+      <div class="contact-item">
+        <span class="fas fa-phone contact-logo"></span>
+        <h3 class="contact-title">Phone Mobile</h3>
+        <a class="contact-link">+251-96-238-5614</a>
+        <a class="contact-link">+251-95-130-9394</a>
+      </div>
+      
+      <div class="contact-item">
+        <span class="fas fa-envelope contact-logo"></span>
+        <h3 class="contact-title">Email</h3>
+        <a class="contact-link">antem2618@gmail.com</a>
+      </div>
+      
+      <div class="contact-item">
+        <span class="fas fa-location-dot contact-logo"></span>
+        <h3 class="contact-title">Address</h3>
+        <a class="contact-link">Addis Ababa, Ethiopia</a>
+      </div>
+      
+      <div class="contact-item">
+        <i class="fa-brands fa-telegram contact-logo"></i>
+        <h3 class="contact-title">Telegram</h3>
+        <a class="contact-link">@MichaelxyzA</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Michael Anteneh</p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+</body>
+</html>
+
